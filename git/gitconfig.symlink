@@ -15,7 +15,7 @@
         branch = auto
         ui = true
 [core]
-        excludesfile = ~/.gitignore
+	excludesfile = /Users/abdulrohim.s/.gitignore_global
         editor = vim
 [apply]
         whitespace = nowarn
@@ -39,3 +39,8 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
+[user]
+	name = Abdulrohim 'Him' Sama
+	email = a.rohim.sama@gmail.com
+[commit]
+	template = /Users/abdulrohim.s/.stCommitMsg

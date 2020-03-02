@@ -4,7 +4,6 @@ source $ZSH/script/lib
 if test ! $(which java)
 then
     info "Installing java8"
-    brew tap homebrew/cask-versions
     brew cask install adoptopenjdk/openjdk/adoptopenjdk8
     success 'Java8 has been installed.'
 fi
@@ -14,15 +13,13 @@ then
     touch ~/.android/repositories.cfg
 fi
 
-if test ! -e $ANDROID_HOME
-then
+if [ ! -d "$ANDROID_HOME" ]; then
     info "Installing android-sdk"
-    brew install android-sdk
-    brew install android-ndk         
+    brew cask install android-sdk
+    brew cask install android-ndk         
 fi
 
-if test ! -e "$ANDROID_HOME/licenses"
-then
+if [ ! -d "$ANDROID_HOME/licenses" ]; then
     sudo cp -r ./android/licenses $ANDROID_HOME/licenses
     success "Android SDK licences copied."
 fi

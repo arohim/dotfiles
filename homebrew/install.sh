@@ -19,6 +19,9 @@ then
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install)"
   fi
 
+
+  brew tap homebrew/cask-versions
+
 fi
 
 exit 0

@@ -1,1 +1,1 @@
-export ANDROID_HOME=/Users/$(whoami)/android-sdk
+export ANDROID_HOME=/Users/$(whoami)/Library/Android/sdk

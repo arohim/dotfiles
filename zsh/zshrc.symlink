@@ -13,6 +13,7 @@ then
 fi
 
 ZSH_THEME="bira"
+plugins=(git)
 
 # all of our zsh files
 typeset -U config_files

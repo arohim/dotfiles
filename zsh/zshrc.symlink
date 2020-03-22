@@ -12,7 +12,7 @@ then
   source ~/.localrc
 fi
 
-ZSH_THEME="bira"
+ZSH_THEME="robbyrussell"
 plugins=(git)
 
 # all of our zsh files

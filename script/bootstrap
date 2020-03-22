@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #
 # bootstrap installs things.
-source $HOME/.dotfiles/script/lib
+source $HOME/.my-dotfiles/script/lib
 
 cd "$(dirname "$0")/.."
 DOTFILES_ROOT=$(pwd -P)

@@ -41,3 +41,15 @@ brew_cask_install_by_cli () {
       success "skipped installing $APP_NAME"
   fi
 }
+
+brew_install_by_cli () {
+  export APP_CLI=$1
+  export APP_NAME=$2
+  if test ! $(which $APP_CLI)
+  then
+      info "Installing $APP_NAME"
+      brew install $APP_NAME
+  else
+      success "skipped installing $APP_NAME"
+  fi
+}

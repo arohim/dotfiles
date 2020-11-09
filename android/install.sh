@@ -8,6 +8,13 @@ then
     success 'Java8 has been installed.'
 fi
 
+if test ! $(which adb)
+then
+    info "Installing adb"
+    brew cask install android-platform-tools
+    success 'adb has been installed.'
+fi
+
 if test ! -e "~/.android/repositories.cfg"
 then
     touch ~/.android/repositories.cfg

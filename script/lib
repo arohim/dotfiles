@@ -24,7 +24,7 @@ brew_cask_install_by_app () {
   if test ! -e "/Applications/$APP_NAME.app"
   then
       info "Installing $APP_CLI"
-      brew cask install $APP_CLI
+      brew install --cask $APP_CLI
   else
       success "skipped installing $APP_NAME"
   fi
@@ -36,7 +36,7 @@ brew_cask_install_by_cli () {
   if test ! $(which $APP_CLI)
   then
       info "Installing $APP_NAME"
-      brew cask install $APP_NAME
+      brew install --cask $APP_NAME
   else
       success "skipped installing $APP_NAME"
   fi

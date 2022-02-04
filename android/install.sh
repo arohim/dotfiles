@@ -4,14 +4,14 @@ source $ZSH/script/lib
 if test ! $(which java)
 then
     info "Installing java8"
-    brew cask install adoptopenjdk/openjdk/adoptopenjdk8
+    brew install --cask adoptopenjdk/openjdk/adoptopenjdk8
     success 'Java8 has been installed.'
 fi
 
 if test ! $(which adb)
 then
     info "Installing adb"
-    brew cask install android-platform-tools
+    brew install --cask android-platform-tools
     success 'adb has been installed.'
 fi
 

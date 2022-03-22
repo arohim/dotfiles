@@ -17,6 +17,7 @@
 [core]
 	excludesfile = /Users/abdulrohim.s/.gitignore_global
         editor = vim
+	autocrlf = input
 [apply]
         whitespace = nowarn
 [mergetool]

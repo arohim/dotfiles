@@ -1,1 +1,0 @@
-export PATH="$PATH:$ZSH/flutter-install/bin"
